@@ -1,14 +1,30 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="utf-8">
   <title>Afterwire</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Web Fonts  -->
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
+
+  <%= stylesheet_link_tag    'application_all', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'modernizr/modernizr', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application_jquery', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-</head>
-<body>
+
+  <!--[if IE]>
+    <%= stylesheet_link_tag    'application_ie', media: 'all', 'data-turbolinks-track' => true %>
+  <![endif]-->
+
+  <!--[if lte IE 8]>
+    <%= javascript_include_tag 'application_ie', 'data-turbolinks-track' => true %>
+  <![endif]-->
 
 <%= yield %>
 
+<%= javascript_include_tag 'application_all', 'data-turbolinks-track' => true %>
 </body>
 </html>

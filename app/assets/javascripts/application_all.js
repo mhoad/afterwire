@@ -10,7 +10,20 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
-//= require jquery
-//= require jquery_ujs
+//= require bootstrap-sprockets
 //= require turbolinks
-//= require_tree .
+//= require jquery.appear/jquery.appear
+//= require jquery.easing/jquery.easing
+//= require jquery-cookie/jquery-cookie
+//= require common/common
+//= require jquery.validation/jquery.validation
+//= require jquery.stellar/jquery.stellar
+//= require jquery.easy-pie-chart/jquery.easy-pie-chart
+//= require jquery.gmap/jquery.gmap
+//= require isotope/jquery.isotope
+//= require owlcarousel/owl.carousel
+//= require magnific-popup/jquery.magnific-popup
+//= require vide/vide
+//= require all/theme
+//= require all/theme.init
+
